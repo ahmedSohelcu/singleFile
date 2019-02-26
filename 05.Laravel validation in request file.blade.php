@@ -1,7 +1,7 @@
  public function rules()
     {
         return [
-            'name'      => 'required', //this field is validated from controller .....
+            'name'      => 'required',
             'unit_id' => 'integer',
             'description' => 'nullable|string'
         ];
