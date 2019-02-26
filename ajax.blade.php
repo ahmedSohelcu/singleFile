@@ -1,3 +1,4 @@
+   1.
     <script>
             //to get floor according to unit id by Ahmed
             $(document).ready(function() {
@@ -20,3 +21,21 @@
                 });
             });
         </script>
+
+
+    2.
+   ==================================================
+   {{--controller method--}}
+    public function searchLineByFloor(Request $request){
+            $floorByUnit = Floor::query()->where('unit_id', $request->unit_id)->get();
+
+            if($floorByUnit->count() > 0 ){
+            $data = '<option>Select Floor </option>';
+            foreach ($floorByUnit as $floor) {
+            $data .= '<option value="'.$floor->id.'">'.$floor->name.'</option>';
+            }
+            echo $data;
+            }else{
+            echo '<option>Nothing found </option>';
+            }
+    }
