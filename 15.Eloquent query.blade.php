@@ -19,3 +19,7 @@ user = User::query()->findOrFail($id);
 
 $roles = Role::all()->pluck('name','id');
 
+Unit::all()->pluck('name','id');
+
+{{ Form::select('unit_id',$repository->units(),null,['class'=>'form-control','id'=>"unit_id", 'placeholder'=>'select unit'])}}
+

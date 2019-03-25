@@ -30,3 +30,8 @@
     </button>
     {{ Form::close() }}
 </td>
+
+
+edit
+---------------------------
+{{ Form::select('unit_id',$repository->units(),null,['class'=>'form-control','id'=>"unit_id", 'placeholder'=>'select unit'])}}
