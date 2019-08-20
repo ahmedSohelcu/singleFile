@@ -33,3 +33,47 @@ Or
 @if (Session::has('message'))
     <div class="alert alert-info">{{ Session::get('message') }}</div>
 @endif
+
+===========================================================================
+
+*******
+===========================================================================
+//** 3. Passing and show different type's of session message at a time 
+===========================================================================
+One solution would be to flash two variables into the session:
+The message itself
+The "class" of your alert
+for example:
+---------------------------------------------------------------------------
+Session::flash('message', 'This is a message!'); 
+Session::flash('alert-class', 'alert-danger'); 
+
+Then in your view:
+---------------------------------------------------------------------------
+@if(Session::has('message'))
+<p class="alert {{ Session::get('alert-class', 'alert-info') }}">{{ Session::get('message') }}</p>
+@endif
+===========================================================================
+
+
+
+
+===========================================================================
+4.OR 
+===========================================================================
+In your view:
+---------------------------------------------------------------------------
+<div class="flash-message">
+  @foreach (['danger', 'warning', 'success', 'info'] as $msg)
+    @if(Session::has('alert-' . $msg))
+    <p class="alert alert-{{ $msg }}">{{ Session::get('alert-' . $msg) }}</p>
+    @endif
+  @endforeach
+</div>
+---------------------------------------------------------------------------
+Then set a flash message in the controller:
+---------------------------------------------------------------------------
+Session::flash('alert-danger', 'danger');
+Session::flash('alert-warning', 'warning');
+Session::flash('alert-success', 'success');
+Session::flash('alert-info', 'info');
