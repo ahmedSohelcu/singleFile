@@ -3,12 +3,27 @@
 --------------------------------------
 1. .env file setting for sendign mail
 --------------------------------------
+1.setting for mail trip. 
+
 MAIL_DRIVER=smtp
 MAIL_HOST=smtp.mailtrap.io
 MAIL_PORT=2525
 MAIL_USERNAME=0a5d5bc2b51cc8
 MAIL_PASSWORD=ed4767c5856336
 MAIL_ENCRYPTION=tls
+
+OR 
+
+2.setting for direct mail address
+
+MAIL_DRIVER=smtp
+MAIL_HOST=smtp.gmail.com
+MAIL_PORT=587
+MAIL_USERNAME=ahmedsohelcu@gmail.com
+MAIL_PASSWORD=dzrdvnqwhppzcfyd
+MAIL_ENCRYPTION=tls
+
+N:b: here password is generated app key
 --------------------------------------
 
 
