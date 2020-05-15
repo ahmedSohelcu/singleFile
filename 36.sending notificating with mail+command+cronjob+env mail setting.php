@@ -14,7 +14,7 @@ MAIL_ENCRYPTION=tls
 
 OR 
 
-2.setting for direct mail address
+2.setting for direct mail address usign 2 step varified gamil
 
 MAIL_DRIVER=smtp
 MAIL_HOST=smtp.gmail.com
