@@ -14,4 +14,10 @@
 2.Show system and kernal => uname -a
 3.Repeat last command => !!
 4.Show environmen variable => env
-
+5.Show current directory => pwd
+6.List files => ls
+7. Show all including hiddent files => ls -a
+            -R (Recursive list)
+            -r (Reverse order)
+            -S (Sort by file size)
+            -1 (One file per line)
