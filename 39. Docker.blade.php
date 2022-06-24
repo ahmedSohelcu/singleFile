@@ -10,7 +10,7 @@ To check Docker status
 sudo systemctl status docker 
 
 ----------------------------------
-To run/enable Docker
+To run/enable Docker 
 ----------------------------------
 sudo systemctl enable --now docker
 
@@ -25,4 +25,5 @@ all local images
 ----------------------------------
 sudo docker images
 
+sudo apt-get update
 
