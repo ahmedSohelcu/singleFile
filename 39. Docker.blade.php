@@ -45,3 +45,4 @@ Docker command
 -----------------------------------
 docker run image-name
 docker run busybox echo This is Ahmed
+docker run busybox ls
