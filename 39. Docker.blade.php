@@ -29,6 +29,13 @@ sudo apt-get update
 docker run -d -p 80:80 docker/getting-started
 
 
+//Docker desktop
+-----------------------------------
+download docker desktop (DEB package) from https://docs.docker.com/desktop/linux/install/
+cd Download
+sudo apt install ./docker-desktop-4.9.1-amd64.deb 
+
 apt install neofetch
 neofetch
+sudo apt install 
 
