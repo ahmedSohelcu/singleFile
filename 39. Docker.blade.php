@@ -24,6 +24,11 @@ sudo docker run hello-world
 all local images
 ----------------------------------
 sudo docker images
-
 sudo apt-get update
+
+docker run -d -p 80:80 docker/getting-started
+
+
+apt install neofetch
+neofetch
 
