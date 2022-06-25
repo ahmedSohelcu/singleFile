@@ -47,5 +47,11 @@ docker run image-name
 
 busybox image
 ------------------------------------
+docker pull busybox
 docker run busybox echo This is Ahmed
 docker run busybox ls
+docker run busybox ping google.com
+docker ps => will show running container 
+docker ps --all => will show all container list
+
+
