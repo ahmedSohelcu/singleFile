@@ -44,5 +44,8 @@ sudo apt install
 Docker command
 -----------------------------------
 docker run image-name
+
+busybox image
+------------------------------------
 docker run busybox echo This is Ahmed
 docker run busybox ls
