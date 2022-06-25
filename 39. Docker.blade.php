@@ -40,3 +40,8 @@ apt install neofetch
 neofetch
 sudo apt install 
 
+
+Docker command
+-----------------------------------
+docker run image-name
+docker run busybox echo This is Ahmed
